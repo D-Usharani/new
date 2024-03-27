@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>House Warming Ceremony Invitation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      font-family: 'Segoe Script', sans-serif; /* Cursive handwriting font */
+      font-family: 'Segoe Script', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -14,7 +15,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 700px;
-      
     }
     .container {
       max-width: 600px;
@@ -32,21 +32,21 @@
       margin-bottom: 10px;
     }
     .videos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.videos img {
-  max-width: 50%; /* Adjust the width of the image */
-  margin-right: 20px; /* Add some space between the image and the quote */
-}
+    .videos img {
+      max-width: 50%;
+      margin-right: 20px;
+    }
 
-.videos p {
-  font-style: oblique;
-  font-weight: bold;
-  color: #333; /* Adjust the color of the text */
-}
+    .videos p {
+      font-style: oblique;
+      font-weight: bold;
+      color: #333;
+    }
 
     #map {
       width: 100%;
@@ -72,6 +72,21 @@
     .light {
       width: 450px;
       height: 310px;
+    }
+
+    /* Media queries for mobile view */
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%; /* Adjust container width for smaller screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+      }
+      img {
+        width: 100%; /* Make images fill the width of the container */
+      }
+      .videos {
+        flex-direction: column; /* Stack the images and quotes vertically on smaller screens */
+        align-items: center;
+      }
     }
   </style>
 </head>
