@@ -73,21 +73,42 @@
       width: 450px;
       height: 310px;
     }
-
-    /* Media queries for mobile view */
     @media only screen and (max-width: 768px) {
-      .container {
-        max-width: 90%; /* Adjust container width for smaller screens */
-        margin: 20px auto; /* Adjust margin for smaller screens */
-      }
-      img {
-        width: 100%; /* Make images fill the width of the container */
-      }
-      .videos {
-        flex-direction: column; /* Stack the images and quotes vertically on smaller screens */
-        align-items: center;
-      }
-    }
+  body {
+    background-size: contain; /* Adjust background size for smaller screens */
+    background-position: center; /* Center background image */
+  }
+  img {
+    width: 100%; /* Make images fill the width of the container */
+  }
+  .gif-container {
+    text-align: center; /* Center align GIF container */
+  }
+  .house-image {
+    max-width: 80%; /* Adjust house image size */
+    width: auto; /* Ensure house image maintains aspect ratio */
+    height: auto; /* Ensure house image maintains aspect ratio */
+  }
+  .light {
+    width: 100%; /* Make light GIF fill the width of the container */
+    max-width: 80%; /* Adjust max-width for smaller screens */
+    height: auto; /* Ensure light GIF maintains aspect ratio */
+  }
+  .videos img {
+    max-width: 50%; /* Adjust image width for smaller screens */
+    margin-bottom: 10px; /* Add margin-bottom for better spacing between elements */
+    max-height: 60%;
+  }
+  .col {
+    width: 100%; /* Make columns take full width on mobile */
+    padding: 0 10px; /* Add some padding to columns for better spacing */
+  }
+  #map {
+    width: 100%; /* Make Google Map iframe take full width */
+    height: 200px; /* Adjust map height */
+  }
+}
+
   </style>
 </head>
 <body>
