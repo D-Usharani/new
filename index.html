@@ -22,6 +22,8 @@
       text-align: center;
       position: relative;
     }
+
+    
     img {
       display: block;
       margin: 0 auto;
@@ -75,9 +77,12 @@
     }
     @media only screen and (max-width: 768px) {
   body {
-    background-size: contain; /* Adjust background size for smaller screens */
+    
     background-position: center; /* Center background image */
   }
+  img[src="welcome-removebg-preview.png"] {
+        max-width: 80%; /* Adjust welcome image width for mobile */
+      }
   img {
     width: 100%; /* Make images fill the width of the container */
   }
