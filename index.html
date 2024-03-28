@@ -76,6 +76,14 @@
       height: 310px;
     }
     @media only screen and (max-width: 768px) {
+
+      @font-face {
+  font-family: 'Segoe Script';
+  src: url('path/to/SegoeScript.woff2') format('woff2'), /* Modern Browsers */
+       url('path/to/SegoeScript.woff') format('woff');   /* Older Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
   body {
     font-family: 'Segoe Script', sans-serif;
     background-position: center; /* Center background image */
